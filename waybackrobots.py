@@ -41,7 +41,7 @@ if __name__ == '__main__':
     unique_paths = set()
     for i in paths:
         unique_paths.update(i)
-    filename = 'robots.txt' % host
+    filename = '%s-robots.txt' % host
     with open(filename, 'w') as f:
         f.write('\n'.join(unique_paths))
     print('[*] Saved results to %s' % filename)
